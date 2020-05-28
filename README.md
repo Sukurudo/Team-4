@@ -1,2 +1,6 @@
 # Team-4
-Data Analytics Team 4 Group Project
+Team 4 Project Team:
+Archie Anand [Github](https://github.com/archieanand)<br>
+Jose Curi [GitHub](https://github.com/joseluiscuri)<br>
+Varsha Jha [GitHub](https://github.com/varshajha28)<br>
+Will Warriner [GitHub](https://github.com/Sukurudo)<br>
