@@ -24,3 +24,18 @@ VALUES
 (2, 'Frozen','childrens', TRUE,'90'),
 (3, 'Uncut Gems', 'crime',TRUE,'92');
 SELECT * FROM movies;
+
+CREATE TABLE oscar_films (
+ id INT PRIMARY KEY NOT NULL,
+ title TEXT,
+ category TEXT,
+ nomination TEXT,
+ full_name TEXT,
+ won_award BOOLEAN
+);
+INSERT INTO oscar_films(id, title, category,nomination,full_name,won_award)
+VALUES
+(1, 'SpiderMan 2', 'action','actor','Andrew Garfield',TRUE),
+(2, 'Inception','action','actor','Leonardo DiCaprio',False),
+(3, 'Uncut Gems', 'crime','actor','Adam Sandler',TRUE);
+SELECT * FROM oscar_films;
