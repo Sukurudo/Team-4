@@ -11,3 +11,16 @@ CREATE DATABASE awardwinners
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
 
+CREATE TABLE movies (
+ id INT PRIMARY KEY NOT NULL,
+ title TEXT,
+ genre TEXT,
+ won_awards BOOLEAN,
+ rotten_tomatos INT
+);
+INSERT INTO movies(id, title, genre,won_awards,rotten_tomatos)
+VALUES
+(1, 'Batman', 'action',TRUE,'80'),
+(2, 'Frozen','childrens', TRUE,'90'),
+(3, 'Uncut Gems', 'crime',TRUE,'92');
+SELECT * FROM movies;
