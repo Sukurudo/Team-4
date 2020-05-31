@@ -1,3 +1,6 @@
+# FOR machine learning we have used module 8's dataset
+# as mock data
+
 -- Database: awardwinners
 
 -- DROP DATABASE awardwinners;
