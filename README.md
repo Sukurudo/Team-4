@@ -23,8 +23,8 @@ Secondary communiction channel will be: Whatsap and Email if necessry
 
 ## Resources
 
-**Utilizing Movie Data from different Sources:**
-The Movie Dataset: https://www.kaggle.com/rounakbanik/the-movies-dataset
+**Utilizing Movie Data from different Sources:**<br>
+The Movie Dataset: https://www.kaggle.com/rounakbanik/the-movies-dataset <br>
 Oscars Dataset: https://www.kaggle.com/unanimad/the-oscar-award
 
 ## Input Files
