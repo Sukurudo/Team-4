@@ -8,10 +8,10 @@ Will Warriner [GitHub](https://github.com/Sukurudo)<br>
 ## Team Member Roles 
 | Team Member | Segment 1 |
 |---|---|
-| **Archie** | :red_circle: |
-| **Jose** | :heavy_multiplication_x: |
-| **Varsha** | :small_red_triangle: |
-| **Will** | :black_large_square: |
+| **Archie** | :red_circle: [Database]|
+| **Jose** | :heavy_multiplication_x: [Technology]|
+| **Varsha** | :small_red_triangle: [Machine Learning]|
+| **Will** | :black_large_square: [Github Setup]|
 
 ## Communication Methodology
 Team Communication: Primary use Slack Channel #project-04 for written and up to date communication;<br>
