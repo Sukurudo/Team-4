@@ -20,6 +20,8 @@ Secondary communiction channel will be: Whatsap and Email if necessry
 
 ## ERD
 
+![ERD](Images/ERD.png)
+
 
 ## Resources
 
