@@ -19,7 +19,9 @@ Team Meetings every evening (6PM PST) using Zoom
 Secondary communiction channel will be: Whatsap and Email if necessry
 
 ## ERD
+
 ![ERD](Images/ERD.png)
+
 
 ## Resources
 
