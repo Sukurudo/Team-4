@@ -10,13 +10,15 @@ Team Communication: Primary use Slack Channel #project-04 for written and up to 
 Team Meetings using Zoom
 Secondary communiction channel will be: Whatsap and Email if necessry
 
+## Google Slide Project Presentation:
+[Google Slides](https://docs.google.com/presentation/d/19eELHUF5ejVCr1qL8Zg_ChHK3Jr896yV9d53X8yzo-M/edit?usp=sharing)
+
 ## ERD
 
-![ERD](Images/ERD_UPDATED.png)
+![ERD](Images/ERD-UPDATED.png)
 
 ## Topic
 Academy Awards(Oscars) is a big event for film industry as the award signify international recognition of excellence for actors, directors, writers, designers, and much more. The awards are given with a variety of different nominees from across different genres. To celebrate the world’s love of art and our love of data, we’ve leveraged the power of automated machine learning to put together our own prediction what movies are more likely to win an oscar in any of the given categories.
-
 
 
 ## Resources
@@ -31,7 +33,7 @@ movies_metadata.csv <br>
 academy_awards.csv<br>
 
 Movies_metadata.csv containes information from IMDB and The Movies Database of over 30,000 movies
-Academy_Awards.csv containes nominees and winners of all Academy awards up to 2020
+Academy_Awards.csv containes nominees and winners of all Academy awards from 1927 - 2020
 
 
 ## Technologies Used
@@ -41,7 +43,7 @@ Academy_Awards.csv containes nominees and winners of all Academy awards up to 20
 - 3. Postgres and AWS
 
 ## Data Cleaning and Exploration Phase
-Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python. Both Original databases will be analized and information prepared for a Machine Learning environment. Unecessary data columns will be dropped to ease the transition to a SQL database in preparation of merging both datasets.
+Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python. Both Original databases will be analized and information prepared for a Machine Learning environment. Unecessary data columns will be dropped to ease the transition to a PostresSQL database in preparation of merging both datasets.
 
 Based on our analysis, we determined the following features were important for our result:
 **Movies_Metadata.csv**: Budget, Imdb_ID, Orginal Title, Popularity, Revenue, Runtime, Title, Vote Average, Vote Count, Production company, Country, Genre, and Release Year
@@ -59,3 +61,10 @@ We are planning to build the machine learning model which will predict whether t
 
 ## Dashboard
 We are planning to use Tableau for the dashboard and will be displaying the analysis from all three methologies.
+
+### Interactive Elements:
+  The Tableau page will allow you to select between the accuracy report and charts from each of the three methologies:
+  Page 1) Welcome Page and Feature Importance
+  Page 2) Random Forest Model
+  Page 3) Decision Tree Model
+  Page 4) Logistic Regression Model
