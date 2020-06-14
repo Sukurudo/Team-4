@@ -70,6 +70,7 @@ We are planning to use Tableau for the dashboard and will be displaying the anal
   Page 4) Logistic Regression Model
   
 # Machine Learning Model
+[Machine Learning Report](Resources/Machine%20Learning%20Model.docx)
 
 ## Description of preliminary data preprocessing:
 ## Preprocessing
