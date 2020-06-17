@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20201.20.0326.1623                               -->
-<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook source-build='2020.1.2 (20201.20.0326.1623)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <SheetIdentifierTracking />
@@ -16,7 +16,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='movies_oscars_combined' name='textscan.0toashw1hmiwqx14px8m118k6s3x'>
-            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/will/Dropbox (FANS)/0 Bootcamp/LocalRepo/Final_Project/Team-4/Resources/movies_oscars_combined.csv' dataRefreshTime='' directory='/Users/will/Dropbox (FANS)/0 Bootcamp/LocalRepo/Final_Project/Team-4/Resources' filename='/var/folders/my/gqqg26l90s9gjp90qjqsffpr0000gn/T/tableau-temp/0epuem30wca69h1fxy6ia1ub8n48/movies_oscars_combined.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/will/Dropbox (FANS)/0 Bootcamp/LocalRepo/Final_Project/Team-4/Resources/movies_oscars_combined.csv' dataRefreshTime='' directory='/Users/will/Dropbox (FANS)/0 Bootcamp/LocalRepo/Final_Project/Team-4/Resources' filename='/var/folders/my/gqqg26l90s9gjp90qjqsffpr0000gn/T/tableau-temp/13vbc5q0uu5vxs1bmcynf0j69iwi/movies_oscars_combined.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0toashw1hmiwqx14px8m118k6s3x' name='movies_oscars_combined.csv' table='[movies_oscars_combined#csv$]' type='table'>
@@ -282,22 +282,19 @@
       <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
       <column caption='Country' datatype='string' hidden='true' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Imdb Id' datatype='string' name='[imdb_id]' role='dimension' type='nominal' />
-      <column caption='New Genre' datatype='string' name='[new_genre]' role='dimension' type='nominal' />
+      <column caption='Genre' datatype='string' name='[new_genre]' role='dimension' type='nominal' />
       <column caption='Original Title' datatype='string' hidden='true' name='[original_title]' role='dimension' type='nominal' />
       <column caption='Popularity' datatype='integer' name='[popularity]' role='measure' type='quantitative' />
-      <column caption='Production' datatype='string' name='[production]' role='dimension' type='nominal' />
+      <column caption='Production Company' datatype='string' name='[production]' role='dimension' type='nominal' />
       <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
       <column caption='Runtime' datatype='integer' name='[runtime]' role='measure' type='quantitative' />
       <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
       <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative' />
       <column caption='Vote Count' datatype='integer' name='[vote_count]' role='measure' type='quantitative' />
-      <column caption='Winner' datatype='boolean' name='[winner]' role='dimension' type='nominal' />
+      <column caption='Oscar Winner' datatype='boolean' name='[winner]' role='dimension' type='nominal' />
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/will/Dropbox (FANS)/0 Bootcamp/LocalRepo/Final_Project/Team-4/Tableau/movies_oscars_combined.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/17/2020 07:01:51 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/will/Dropbox (FANS)/0 Bootcamp/LocalRepo/Final_Project/Team-4/Tableau/movies_oscars_combined.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <refresh>
-            <refresh-event add-from-file-path='movies_oscars_combined' increment-value='%null%' refresh-type='create' rows-inserted='18271' timestamp-start='2020-06-17 19:01:51.526' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>imdb_id</remote-name>
@@ -472,6 +469,64 @@
     <worksheet name='Sheet 1'>
       <table>
         <view>
+          <datasources>
+            <datasource caption='movies_oscars_combined' name='federated.0rfutq61dvk6j21g8fxxt12y73ah' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rfutq61dvk6j21g8fxxt12y73ah'>
+            <column caption='Genre' datatype='string' name='[new_genre]' role='dimension' type='nominal' />
+            <column-instance column='[new_genre]' derivation='None' name='[none:new_genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Popularity' datatype='integer' name='[popularity]' role='measure' type='quantitative' />
+            <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+            <column caption='Oscar Winner' datatype='boolean' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rfutq61dvk6j21g8fxxt12y73ah].[none:winner:nk]</rows>
+        <cols>([federated.0rfutq61dvk6j21g8fxxt12y73ah].[none:new_genre:nk] * [federated.0rfutq61dvk6j21g8fxxt12y73ah].[sum:popularity:qk])</cols>
+      </table>
+      <simple-id uuid='{BAB4D3D7-D2A9-46C7-BF14-97D585635BA4}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_oscars_combined' name='federated.0rfutq61dvk6j21g8fxxt12y73ah' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rfutq61dvk6j21g8fxxt12y73ah'>
+            <column-instance column='[runtime]' derivation='Avg' name='[avg:runtime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Runtime' datatype='integer' name='[runtime]' role='measure' type='quantitative' />
+            <column caption='Oscar Winner' datatype='boolean' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rfutq61dvk6j21g8fxxt12y73ah].[avg:runtime:qk]</rows>
+        <cols>[federated.0rfutq61dvk6j21g8fxxt12y73ah].[none:winner:nk]</cols>
+      </table>
+      <simple-id uuid='{D8D27AEB-D7C1-42CA-855B-426641F1C8D1}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
           <datasources />
           <aggregation value='true' />
         </view>
@@ -487,11 +542,11 @@
         <rows />
         <cols />
       </table>
-      <simple-id uuid='{BAB4D3D7-D2A9-46C7-BF14-97D585635BA4}' />
+      <simple-id uuid='{89BD055A-4346-4234-94DE-9AAEFF28B801}' />
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -513,6 +568,52 @@
         </edge>
       </cards>
       <simple-id uuid='{B60AEF2B-660E-47D8-B19C-1C5082AD1E6A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4B18126-086A-4175-A9D7-1B842E4C3DCC}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E28694D-5571-4376-94AC-D24B2EE8E6AF}' />
     </window>
   </windows>
 </workbook>
