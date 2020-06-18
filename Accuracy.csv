@@ -1,0 +1,4 @@
+﻿,No Feature Selection,Feature Selection,Best Features
+Logistic Regression,0.68,0.795,0.806
+Decision Tree,0.78,0.876,0.875
+Random Forest,0.77,0.879,0.879
