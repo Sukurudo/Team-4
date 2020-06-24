@@ -121,7 +121,7 @@ Correlation Matrix with Heatmap shows the correlation between the features and t
 
 ![Heat Map](/Images/HeatMap.png)
 
-The graph on the left shows popularity, which seems to be heavily skewed toward the most recent movies. The graph on the right shows that the revenue does not share any pattern with popularity. So, popularity is not useful for classification and is dropped from the dataset.
+The graph on the left shows popularity, which seems to be heavily skewed toward the most recent movies. The graph on the right shows that the revenue does not share any pattern with popularity. To counteract that, we limited our scope to movies that were made in 1990 and newer.
 
 In summary, the following features are dropped for not being useful in predicting winner:
 
