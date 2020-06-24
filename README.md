@@ -14,7 +14,7 @@ Secondary communiction channel will be: Whatsap and Email if necessry
 [Google Slides](https://docs.google.com/presentation/d/19eELHUF5ejVCr1qL8Zg_ChHK3Jr896yV9d53X8yzo-M/edit?usp=sharing)
 
 ## Tableau Workbook Presentation:
-[Tableau](https://public.tableau.com/profile/will.warriner#!/vizhome/OscarsPredictions/Story1)
+[Tableau](https://public.tableau.com/profile/will.warriner#!/vizhome/OscarsPredictions/OscarWinners)
 
 ## ERD
 
