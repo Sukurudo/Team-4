@@ -1,8 +1,7 @@
-
 # Machine Learning Model
-Description of preliminary data preprocessing:
+**Description of preliminary data preprocessing:**
 
-## Preprocessing
+# Preprocessing
 
 Before this raw dataset is used for classification, it must be modified so it can be suitable for analysis. Many features are missing from many movies and it must be handled. New features will be created to help analysis. And analyzing the data will determine which features are useful for classification.
 
@@ -70,4 +69,30 @@ We ran the dataset via three different machine learning model which yielded the 
 
 1. Decision Tree: The decision tree works by setting a division threshold for each feature to predict the target variable. There are two main criteria for determining when to split a tree node, gini and entropy. A decision tree tends to get overfitted when there are no boundaries for tree size. The Accuracy for the dataset in this model was 0.87
 
-1. RandomForest: The random forest algorithm is an ensemble version of the decision tree algorithm, which means that the model uses multiple decision trees. Because of this, the random forest accuracy is expected to be better than the previous decision tree. This algorithm uses the same hyper-parameters as the decision tree except for number of trees (n\_estimators). The random forest accuracy was same as the decision tree accuracy as 0.87
+1. Random Forest: The random forest algorithm is an ensemble version of the decision tree algorithm, which means that the model uses multiple decision trees. Because of this, the random forest accuracy is expected to be better than the previous decision tree. This algorithm uses the same hyper-parameters as the decision tree except for number of trees (n\_estimators). The random forest accuracy was same as the decision tree accuracy as 0.87
+
+**Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)**
+
+We ran the dataset via three models (Logistic Regression, Decision Tree and Random Forest). There was no change in the model choice.
+
+**Description of how model was trained (or retrained, if they are using an existing model)**
+
+We identified that the release year was skewing the data and so we filtered the data to include the movies that had been released from 1990 and beyond. The accuracy improved in all the model. We ran the dataset via three machine learning models. We did the training of all the model using the best feature only. The Accuracy score increased in case of Logistic Regression; however, the accuracy score remained the same in case of Decision Tree and Random Forest. The result shows that we can get the same accuracy in spite of using a smaller number of data/columns, which will improve the performance.
+
+**Description and explanation of model&#39;s confusion matrix, including final accuracy score**
+
+The chart below shows the accuracy scores for all the models based on the data provided in the model.
+
+| Classification Models | Raw Data | Featured Data | Best Feature |
+| --- | --- | --- | --- |
+| Logistic Regression | 0.68 | 0.795 | 0.806 |
+| Decision Tree | 0.78 | 0.876 | 0.875 |
+| Random Forest | 0.77 | 0.879 | 0.879 |
+
+**Confusion Matrix for Random Forest with Featured Data**
+
+![Selction](../Images/confusion.png)
+
+**Additionally, the model obviously addresses the question or problem the team is solving.**
+
+In conclusion the Random Forest was the best model to predict whether the movie will win an award in Oscar or not. The Accuracy showed that the chances of the movie winning the award will be 0.87.
