@@ -172,3 +172,17 @@ The chart below shows the accuracy scores for all the models based on the data p
 **Additionally, the model obviously addresses the question or problem the team is solving.**
 
 In conclusion the Random Forest was the best model to predict whether the movie will win an award in Oscar or not. The Accuracy showed that the chances of the movie winning the award will be 0.87.
+
+## Conclusion:
+The top 5 features that we believe best predict a future Oscar winning movie are vote count, revenue, vote average, runtime, and popularity. We decided the remaining five out of the ten features we selected are too specific to be a fair predictor of award-winning movies. For example, we dropped the features related to specific production companies and genres since awards are not given based on those factors. We noticed that award-winning movies have a positive correlation with the stated five factors, so movies with higher values are more likely to win.
+
+
+
+## Further Analysis:
+
+The next steps in the development of this model would be to run a dataset containing movies released in 2020 and compare them to the Oscars that will occur in 2021: Testing this accuracy will allow us to further test the training models.
+
+Further development could be done by combinind data from other datasets that have information not contained in the IMDB. this could find other features not listed that contribute to a movies Oscar success.
+
+Further improvement of the model might be able to allow it to make specific predictions such as a movies chance of winning specific categories of Oscar; This would require implementation of more features such as names of cast and crew members into the Model.
+
